@@ -1,0 +1,673 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.main-container {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ___________________Heading tags___________________*/
+
+.logo-card {
+  color: #fff;
+  font-size: 3rem;
+  position: relative;
+  /* top: -150px; */
+  margin: auto;
+  display: inline-block;
+}
+
+.logo-card p {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  top: -60px;
+  left: -30px;
+  position: relative;
+}
+
+.svg-logo {
+  box-shadow: 0 0 20px 5px #59cbe8;
+  animation: pulse 1.5s infinite;
+  border-radius: 50%;
+  margin: 40px;
+}
+/*-----------------MAIN HERO CONTENT-----------------*/
+
+.top-heading {
+  color: white;
+  font-size: 4rem;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000, 3px 3px 0 #fff, 4px 4px 0 #000,
+    5px 5px 0 #fff;
+  top: -5px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: 4rem;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------*/
+/*-------------Divider section-----------------*/
+/*Divider 1*/
+.custom-shape-divider-bottom-1733120043 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733120043 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 189px;
+}
+
+.custom-shape-divider-bottom-1733120043 .shape-fill {
+  fill: #ffff;
+}
+
+/*Divider 2*/
+.custom-shape-divider-bottom-1733558768 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733558768 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1733558768 .shape-fill {
+  fill: #ffffff;
+}
+/* ============================================================== */
+.flip-card {
+  background-color: transparent;
+  height: 500px;
+  perspective: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: slide-in 1.5s ease-in-out forwards; */
+  z-index: 5;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-250%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, 1, 1, 0deg);
+  justify-content: center;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: transform 2s ease-in-out;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  backface-visibility: hidden;
+  display: flex;
+  border: 8px outset #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px #ffff;
+}
+
+.project-card-front {
+  position: absolute;
+  /* width: 100%; */
+  /* height: inherit; */
+  backface-visibility: hidden;
+  display: flex;
+  border: 8px outset #ffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px #ffff;
+}
+
+.flip-card-front {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  left: -40px;
+  font-size: 24px;
+  border: 8px outset #ffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px #ffff;
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back p {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+
+.flip-card-front h3 {
+  color: #000000;
+  top: -30px;
+  position: relative;
+  text-shadow: #59cbe8 1px 0 10px;
+}
+
+.flip-card-back button,
+.btn-learn {
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  color: #ffff;
+  border: none;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+.btn-learn:hover {
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #59cbe8 0%, #000000 100%);
+  color: #ffff;
+  border: none;
+  border-radius: 8px;
+  animation: pulse;
+}
+
+.fun-facts {
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  color: #000000;
+  border-radius: 8px;
+  border: 5px inset #000;
+  animation: 3s linear 1.5s infinite alternate colorIn;
+  /* animation: 3s linear 1s infinite alternate slidein; */
+  position: relative;
+  transition: background 0.3s;
+}
+
+.fun-facts:hover,
+.download-link:hover {
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(180deg, #59cbe8 0%, #fff 50%, #59cbe8 100%);
+  color: #000000;
+  /* border: none; */
+  border: 5px inset #000;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #59cbe8;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  }
+  50% {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #59cbe8 0%, #000000 100%);
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes colorIn {
+  0% {
+    background-color: #fff;
+    color: #000000;
+  }
+  25% {
+    background-color: #59cbe8;
+    color: #000000;
+  }
+  50% {
+    background-color: #00ccff;
+    color: #000000;
+  }
+  100% {
+    background-color: #fff;
+    color: #000000;
+  }
+}
+/*------------------Nav bar styling------------------*/
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  background: linear-gradient(135deg, #59cbe8 0%, #000000 100%);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-bar img {
+  width: 300px;
+  position: relative;
+  left: -300px;
+  border-radius: 10px;
+  border: 2px inset #fff;
+}
+
+li {
+  display: flex;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  float: right;
+  right: -300px;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: end;
+  right: -300px;
+  position: relative;
+}
+
+li a:hover {
+  background-color: #fff;
+  border: 2px double #59cbe8;
+  box-shadow: 0 0 20px 5px #00ccff;
+  animation: pulse 1.5s infinite;
+  border-radius: 8px;
+}
+
+/*------------------About me section------------------*/
+.about-me-container {
+  display: flex;
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container h3 {
+  justify-content: center;
+}
+
+.photo-container {
+  color: #fff;
+  background: linear-gradient(90deg, #59cbe8 0%, #000000 100%);
+  padding: 20px;
+  border: 5px inset #fff;
+  border-radius: 10px;
+  /* flex: 1; Allows the child divs to be evenly distributed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the cards */
+  width: 600px;
+  /* height: 600px; */
+  left: -200px;
+}
+
+.info-container {
+  color: #fff;
+  background: linear-gradient(90deg, #59cbe8 0%, #000000 100%);
+  padding: 20px;
+  border: 5px inset #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the cards */
+  width: 600px;
+  height: 300px;
+  top: -190px;
+  justify-items: center;
+  position: relative;
+}
+
+.fact-blocks-container {
+  display: none;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 0 10px #fff;
+  border: 4mm ridge #59cbe8;
+  border-radius: 20px;
+  left: -200px;
+}
+
+.fact-block {
+  position: relative;
+  z-index: 8;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+  text-align: center;
+  color: #000000;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-size: 2.5rem;
+}
+
+.photo-container img {
+  width: 100%;
+  justify-items: center;
+  display: flex;
+  /* right: -200px; */
+  height: 50%;
+  border-radius: 10px;
+  border: 5px inset #fff;
+}
+
+.info-container p {
+  text-align: justify;
+  /* font-family: "Funnel Sans", sans-serif; */
+}
+
+.svg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.svg-container:hover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.download-container {
+  position: relative;
+  display: inline-block;
+  right: -300px;
+}
+.download-link {
+  padding: 30px 30px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 5px inset #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  position: relative;
+  z-index: 10;
+  animation: 3s linear 1.5s infinite alternate colorIn;
+}
+
+.download-link:hover {
+  padding: 30px 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  background: linear-gradient(180deg, #59cbe8 0%, #fff 50%, #59cbe8 100%);
+  color: #000000;
+  /* border: none; */
+  border: 5px inset #000;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #59cbe8;
+}
+
+/*----------------------Project Cards styling------------------------*/
+
+.project1,
+.project2,
+.project3 {
+  font-size: 4rem;
+}
+
+.project-card {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px #000;
+  border: 5px inset #fff;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+  perspective: 1000px;
+  display: flex;
+  position: relative;
+  animation: 3s linear 1s running slidein;
+}
+
+.portfolio {
+  position: relative;
+  display: flex;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000, 3px 3px 0 #fff, 4px 4px 0 #000,
+    5px 5px 0 #fff;
+}
+
+.project-card img {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.project-card p {
+  position: relative;
+  /* text-align: justify; */
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding: 15px;
+  top: -20px;
+  margin: 2px;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+  z-index: 1;
+  color: #000000;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.project-card:hover .project-card-front {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project-card:hover .project-card-back {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-card-front,
+.project-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.project-card-front {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-card-back {
+  /* background: linear-gradient(135deg, #000000 0%, #434343 100%); */
+  /* background: repeating-linear-gradient(
+    -45deg,
+    #00000092,
+    #000000,
+    #00000092,
+    #000000,
+    #00000092,
+    #000000,
+    #00000092,
+    #000000
+  ); */
+
+  color: white;
+
+  visibility: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  visibility: visible;
+  position: absolute;
+}
+
+.website1-back,
+.website2-back,
+.website3-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  display: none;
+  opacity: 0.4;
+}
+
+.back-image {
+  opacity: 0.5;
+}
+
+.btn-back {
+  color: #fff;
+  padding: 20px 20px;
+  background: #000000;
+  width: auto;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  border: 5px double #59cbe8;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 5px #fff;
+  z-index: 5;
+}
+
+.btn-back:hover {
+  background-color: #fff;
+  border: 2px double #59cbe8;
+  box-shadow: 0 0 20px 5px #00ccff;
+  animation: pulse 1.5s infinite;
+  border-radius: 8px;
+}
+.btn-back a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
