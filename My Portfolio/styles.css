@@ -6,6 +6,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-family: "Trirong", serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
 }
 
 body {
@@ -30,7 +38,6 @@ body {
   color: #fff;
   font-size: 3rem;
   position: relative;
-  /* top: -150px; */
   margin: auto;
   display: inline-block;
 }
@@ -133,7 +140,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: slide-in 1.5s ease-in-out forwards; */
+  animation: slide-in 1.5s ease-in-out forwards;
   z-index: 5;
 }
 
@@ -177,8 +184,6 @@ h3 {
 
 .project-card-front {
   position: absolute;
-  /* width: 100%; */
-  /* height: inherit; */
   backface-visibility: hidden;
   display: flex;
   border: 8px outset #ffff;
@@ -259,7 +264,6 @@ h3 {
   border-radius: 8px;
   border: 5px inset #000;
   animation: 3s linear 1.5s infinite alternate colorIn;
-  /* animation: 3s linear 1s infinite alternate slidein; */
   position: relative;
   transition: background 0.3s;
 }
@@ -272,7 +276,7 @@ h3 {
   cursor: pointer;
   background: linear-gradient(180deg, #59cbe8 0%, #fff 50%, #59cbe8 100%);
   color: #000000;
-  /* border: none; */
+
   border: 5px inset #000;
   border-radius: 8px;
   box-shadow: 0 0 20px #59cbe8;
@@ -347,7 +351,6 @@ li {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
   float: right;
   right: -300px;
 }
@@ -392,10 +395,8 @@ li a:hover {
   padding: 20px;
   border: 5px inset #fff;
   border-radius: 10px;
-  /* flex: 1; Allows the child divs to be evenly distributed */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 600px;
-  /* height: 600px; */
   left: -200px;
 }
 
@@ -405,7 +406,7 @@ li a:hover {
   padding: 20px;
   border: 5px inset #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 600px;
   height: 300px;
   top: -190px;
@@ -436,7 +437,6 @@ li a:hover {
   width: auto;
   text-align: center;
   color: #000000;
-  /* font-family: "Times New Roman", Times, serif; */
   font-size: 2.5rem;
 }
 
@@ -444,7 +444,6 @@ li a:hover {
   width: 100%;
   justify-items: center;
   display: flex;
-  /* right: -200px; */
   height: 50%;
   border-radius: 10px;
   border: 5px inset #fff;
@@ -452,7 +451,6 @@ li a:hover {
 
 .info-container p {
   text-align: justify;
-  /* font-family: "Funnel Sans", sans-serif; */
 }
 
 .svg-container {
@@ -479,7 +477,6 @@ li a:hover {
   text-decoration: none;
   border-radius: 8px;
   border: 5px inset #000;
-  font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
   position: relative;
   z-index: 10;
@@ -492,7 +489,6 @@ li a:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #59cbe8 0%, #fff 50%, #59cbe8 100%);
   color: #000000;
-  /* border: none; */
   border: 5px inset #000;
   border-radius: 8px;
   box-shadow: 0 0 20px #59cbe8;
@@ -510,7 +506,6 @@ li a:hover {
   background: #fff;
   color: #000;
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
   width: 100%;
   height: 100%;
   margin: 10px;
@@ -544,7 +539,6 @@ li a:hover {
 
 .project-card p {
   position: relative;
-  /* text-align: justify; */
   font-size: 2rem;
   line-height: 2.5rem;
   padding: 15px;
@@ -598,21 +592,7 @@ li a:hover {
 }
 
 .project-card-back {
-  /* background: linear-gradient(135deg, #000000 0%, #434343 100%); */
-  /* background: repeating-linear-gradient(
-    -45deg,
-    #00000092,
-    #000000,
-    #00000092,
-    #000000,
-    #00000092,
-    #000000,
-    #00000092,
-    #000000
-  ); */
-
   color: white;
-
   visibility: hidden;
 }
 
@@ -649,7 +629,6 @@ li a:hover {
   background: #000000;
   width: auto;
   font-size: 2rem;
-  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   cursor: pointer;
   border: 5px double #59cbe8;
@@ -668,6 +647,4 @@ li a:hover {
 .btn-back a {
   text-decoration: none;
   color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
